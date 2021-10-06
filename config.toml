@@ -1,4 +1,4 @@
-baseURL = "https://www.rninsurance.com/"
+baseURL = "https://patti-cleaning.netlify.app/"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 enableRobotsTXT = "true"
 languageCode = "en-us"
