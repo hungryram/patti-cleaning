@@ -8,45 +8,53 @@
         color: #000!important;
     }
 </style>
-<div class="uk-visible@s">
-    <nav class="main-nav uk-padding-small">
-        <div class="uk-container">
-            <div uk-navbar>
-                <div class="uk-navbar-left">
-                    <a href="{{ .Site.BaseURL }}">
+<div class="uk-visible@m">
+	<div class="uk-sticky">
+		<div class="uk-navbar-container uk-navbar-transparent">
+			<div class="uk-container uk-container-large">
+				<nav class="uk-navbar">
+					<div class="uk-navbar-left">
+						<a class="uk-logo" href="{{ .Site.BaseURL }}">
                         <h1 class="uk-h3"><span class="accent">Cleaning</span> Company</h1>
-                    </a>
-
-                </div>
-                <div class="uk-navbar-right">
-                    <ul class="uk-navbar-nav">
-                        {{ $currentPage := . }}
-                        {{ range .Site.Menus.main }}
-                        {{ if .HasChildren }}
-                        <li>
-                            <a href="#">{{ .Name }}<span class="uk-margin-small-left" uk-icon="chevron-down"></span></a>
-                            <div class="uk-navbar-dropdown">
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    {{ range .Children }}
-                                    <li class="uk-active"><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
-                                    {{ end }}
+                            
+                        </a>
+					</div>
+					<div class="uk-navbar-right">
+						<div class="uk-navbar-item">
+                            <ul class="uk-navbar-nav">
+                                {{ $currentPage := . }}
+                                {{ range .Site.Menus.main }}
+                                {{ if .HasChildren }}
+                                <li>
+                                    <a href="#">{{ .Name }}<span class="uk-margin-small-left" uk-icon="chevron-down"></span></a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            {{ range .Children }}
+                                            <li class="uk-active"><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+                                            {{ end }}
+                                        </ul>
+                                    </div>
+                                </li>
+                                {{ else }}
+                                <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+                                {{ end }}
+                                {{ end }}
+                                <div class="uk-navbar-item">
+                                    <li><a href="/contact" class="uk-button uk-button-primary"><span uk-icon="icon: receiver" class="uk-margin-small-right"></span>951-454-2650</a></li>
+                                </div>
                                 </ul>
-                            </div>
-                        </li>
-                        {{ else }}
-                        <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
-                        {{ end }}
-                        {{ end }}
-                        <div class="uk-navbar-item">
-                            <li><a href="/contact" class="uk-button uk-button-primary"><span uk-icon="icon: receiver" class="uk-margin-small-right"></span>951-454-2650</a></li>
-                        </div>
-                        </ul>
-                </div>
-
-            </div>
-        </div>
-    </nav>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="uk-sticky-placeholder" hidden="" style="height: 80px; margin: 0px;"></div>
 </div>
+
+
+
+
 
 
 <!-- mobile -->
