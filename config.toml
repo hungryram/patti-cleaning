@@ -3,7 +3,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 enableRobotsTXT = "true"
 languageCode = "en-us"
 [[menu.main]]
-name = "Insurance Plans"
+name = "Services"
 weight = 2
 [[menu.main]]
 name = "About"
