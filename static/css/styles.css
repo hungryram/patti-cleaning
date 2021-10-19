@@ -24,17 +24,16 @@ body .uk-heading-xlarge {
 body {
     font-family: 'Poppins', sans-serif;
     color: #777;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 27px;
 }
 
 html body {
-    font-size: 16px;
     color: #252525;
 }
 
 .main__content a {
-    color: #2689D6;
+    color: #d1006c;
     text-decoration: underline;
 }
 
@@ -82,7 +81,7 @@ a.uk-button-secondary {
     -moz-transition: ease-out 0.6s;
     transition: ease-out 0.6s;
     outline: none;
-    border: 1px solid #2689D6;
+    border: 1px solid #d1006c;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0,0,0,.2);
 }
@@ -92,7 +91,7 @@ a.uk-button-secondary {
 }
 
 .accent {
-    color: #2689D6;
+    color: #d1006c;
 }
 
 .uk-white {
@@ -101,7 +100,7 @@ a.uk-button-secondary {
 
 button.uk-button-primary,
 a.uk-button-primary {
-    background: #2689D6;
+    background: #d1006c;
     padding: 5px 40px;
     color: #FFF;
     display: inline-block;
@@ -121,7 +120,7 @@ a.uk-button-primary {
 
 body .uk-button-primary.uk-active, body .uk-button-primary:active,
 body .uk-button-primary:focus, body .uk-button-primary:hover {
-    background-color: #2689D6;
+    background-color: #d1006c;
     color: #fff;
 }
 
@@ -139,7 +138,7 @@ body .uk-button-primary:focus, body .uk-button-primary:hover {
 @media screen and (min-width:800px) {
     div.page__banner .page__slider {
         content: '';
-        background: #2689D6;
+        background: #d1006c;
         position: absolute;
         width: 45%;
         height: 100%;
@@ -182,7 +181,7 @@ div.uk-navbar-dropdown ul li {
 }
 
 div.uk-navbar-dropdown ul li:hover {
-    background: #2689D6;
+    background: #d1006c;
     transition: .3s;
     color: #fff;
 }
@@ -213,9 +212,9 @@ ul.uk-navbar-nav>li>a:not(.top-navbar a) {
 }
 
 div ul.uk-navbar-nav>li>a:hover {
-    border-bottom: 3px solid #2689D6;
+    border-bottom: 3px solid #d1006c;
     transition: .1s;
-    color: #2689D6;
+    color: #d1006c;
 }
 
 ul.uk-nav-parent-icon>.uk-parent>a::after {
@@ -287,10 +286,10 @@ div.hero-text li img {
 
 .featured__section .uk-card-default:hover,
 .service__box .uk-card-default:hover {
-    background: #2689D6;
+    background: #d1006c;
     color: #fff;
     transition: .3s ease;
-    border: 1px solid #2689D6;
+    border: 1px solid #d1006c;
 }
 
 .featured__section .uk-card-default:hover h3,
@@ -334,7 +333,7 @@ div.hero-text li img {
 }
 
 .contact__icons a:hover {
-    color: #2689D6;
+    color: #d1006c;
     transition: .3s;
 }
 
@@ -342,7 +341,7 @@ div.hero-text li img {
 
 div.box-top {
     position: absolute;
-    background: #2689D6;
+    background: #d1006c;
     width: 200px;
     left: -50px;
     z-index: -1;
@@ -370,12 +369,12 @@ div.uk-card-secondary.uk-card-hover:hover {
 
 .faq__page .uk-card-body h3 {
     font-size: 1rem;
-    border-left: 4px solid #2689D6;
+    border-left: 4px solid #d1006c;
     padding-left: 10px;
 }
 
 ul.service__list__faq li a:hover {
-    color: #2689D6;
+    color: #d1006c;
     transition: .3s;
 }
 
@@ -396,7 +395,7 @@ div.footer-credit ul li a {
 }
 
 .contact-detail span.uk-icon-button {
-    background: #2689D6;
+    background: #d1006c;
 }
 
 .contact-detail svg {
@@ -420,7 +419,7 @@ footer.footer svg {
 }
 
 footer.footer svg:hover {
-    color: #2689D6;
+    color: #d1006c;
     transition: .3s;
 }
 
