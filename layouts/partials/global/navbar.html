@@ -15,8 +15,7 @@
 				<nav class="uk-navbar">
 					<div class="uk-navbar-left">
 						<a class="uk-logo" href="{{ .Site.BaseURL }}">
-                        <h1 class="uk-h3"><span class="accent">Cleaning</span> Company</h1>
-                            
+                            <img src="{{ .Site.Data.appearance.branding.logo }}" alt="" width="200">
                         </a>
 					</div>
 					<div class="uk-navbar-right">
@@ -39,9 +38,9 @@
                                 <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
                                 {{ end }}
                                 {{ end }}
-                                <div class="uk-navbar-item">
+                                <!-- <div class="uk-navbar-item">
                                     <li><a href="/contact" class="uk-button uk-button-primary"><span uk-icon="icon: receiver" class="uk-margin-small-right"></span>951-454-2650</a></li>
-                                </div>
+                                </div> -->
                                 </ul>
 						</div>
 					</div>

@@ -17,7 +17,7 @@ body .uk-heading-large,
 body .uk-heading-medium, 
 body .uk-heading-small, 
 body .uk-heading-xlarge {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
 
@@ -72,7 +72,7 @@ h1.h1-title {
 }
 
 a.uk-button-secondary {
-    background: transparent;
+    background: #fff;
     padding: 4px 39px;
     color: #000;
     display: inline-block;
@@ -81,7 +81,6 @@ a.uk-button-secondary {
     -moz-transition: ease-out 0.6s;
     transition: ease-out 0.6s;
     outline: none;
-    border: 1px solid #d1006c;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0,0,0,.2);
 }
@@ -97,10 +96,15 @@ a.uk-button-secondary {
 .uk-white {
     color: #fff!important;
 }
+/* 
+.hero__content .uk-button.uk-button-secondary {
+    color: #fff;
+    border: 1px solid #fff;
+} */
 
 button.uk-button-primary,
 a.uk-button-primary {
-    background: #d1006c;
+    background-color: #d1006c;
     padding: 5px 40px;
     color: #FFF;
     display: inline-block;
@@ -381,12 +385,12 @@ ul.service__list__faq li a:hover {
 /* FOOTER */
 
 footer.footer {
-    background: #19202A;
+    background: #fff;
 }
 
 footer.footer h6,
 footer.footer a {
-    color: #fff;
+    color: #666;
 }
 
 div.footer-credit p,
@@ -403,7 +407,7 @@ div.footer-credit ul li a {
 }
 
 .contact-detail a {
-    color: #000;
+    color: #666;
 }
 
 .service__list {
