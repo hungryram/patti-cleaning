@@ -1,5 +1,5 @@
-<div class="uk-section">
-    <div class="uk-container uk-container-large uk-padding" style="background: #f6f6f6">
+<div class="uk-section" style="background: url(https://res.cloudinary.com/hungryram19/image/upload/v1635972099/patti/cleaning/officespace.jpg) no-repeat center;background-size:cover;background-blend-mode: overlay;background-color: rgb(255 255 255 / 86%);">
+    <div class="uk-container uk-container-large uk-padding">
         <div class="uk-grid uk-flex uk-flex-middle">
             <div class="uk-width-3-5@s">
                 <div>
@@ -9,7 +9,29 @@
                 </div>
             </div>
             <div class="uk-width-expand">
-                <img src="https://res.cloudinary.com/hungryram19/image/upload/v1635927579/patti/cleaning/wiping-counter.jpg" alt="">
+                <h2>Send an email</h2>
+                <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" class="uk-grid-small" uk-grid action="/thank-you">
+                    <input name="bot-field" type="hidden" />
+                    <input type="hidden" name="Subject" value="Website Contact Form">
+                    <div class="uk-width-1-2@s">
+                        <input class="uk-input" type="text" name="First Name" id="uk-input-fname" placeholder="First Name" required>
+                    </div>
+                    <div class="uk-width-1-2@s">
+                        <input class="uk-input" type="text" name="Last Name" id="uk-input-lname" placeholder="Last Name" required>
+                    </div>
+                    <div class="uk-width-1-1">
+                        <input class="uk-input" type="email" id="input-email" name="Email" placeholder="Email" required>
+                    </div>
+                    <div class="uk-width-1-1">
+                        <textarea class="uk-textarea" rows="5" id="textarea-info" placeholder="Your Message" name="Message"></textarea>
+                    </div>
+                    <div class="uk-width-1-1">
+                        <button class="uk-button uk-button-primary uk-width-1-1">Submit</button>
+                    </div>
+                    <div class="uk-width-1-1">
+                        <p>By submitting the form with your information above you are agreeing to our <a class="uk-link-text" href="/legal/terms-and-conditions">Terms and Conditions</a> and <a class="uk-link-text" href="/legal/privacy-policy">Privacy Policy</a></p>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

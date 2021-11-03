@@ -10,9 +10,6 @@ name = "About"
 url = "/about"
 weight = 3
 [[menu.main]]
-name = "Resources"
-weight = 4
-[[menu.main]]
 name = "Home"
 url = "/"
 weight = 1
