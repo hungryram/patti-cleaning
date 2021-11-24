@@ -14,46 +14,22 @@
 
 <div class="uk-section uk-section-small">
     <div class="uk-container uk-container-large">
-        <div class="uk-text-center uk-grid-match" uk-grid>
-            <div class="uk-width-1-3">
+        <div class="uk-text-center uk-grid-match uk-child-width-1-3@s" uk-grid>
+            {{ range where .Site.RegularPages "Type" "services" }}
+            <div>
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-media-top uk-cover-container">
-                        <img src="https://res.cloudinary.com/hungryram19/image/upload/v1635921759/patti/cleaning/cleaning-floor.jpg" alt="" uk-cover>
+                        <img src="{{ .Params.image }}" alt="" uk-cover>
                         <canvas height="300"></canvas>
                     </div>
                     <div class="uk-card-body">
-                        <h3 class="uk-card-title">Basic Cleaning</h3>
-                        <p>An affordable service for basic cleaning for a minimum of 4 hours</p>
-                        <a href="" class="uk-button uk-button-primary">Learn more</a>
+                        <h3 class="uk-card-title">{{ .Title }}</h3>
+                        <p>{{ .Params.body | truncate 100 }}</p>
+                        <a href="{{ .Permalink }}" class="uk-button uk-button-primary">Learn more</a>
                     </div>
                 </div>
             </div>
-            <div class="uk-width-1-3">
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top uk-cover-container">
-                        <img src="https://res.cloudinary.com/hungryram19/image/upload/v1635922230/patti/cleaning/cleaning-tub.jpg" alt="" uk-cover>
-                        <canvas height="300"></canvas>
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Deep Cleaning</h3>
-                        <p>A full cleaning service that won't break the bank.</p>
-                        <a href="" class="uk-button uk-button-primary">Learn more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="uk-width-1-3">
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top uk-cover-container">
-                        <img src="https://res.cloudinary.com/hungryram19/image/upload/v1635922095/patti/cleaning/deep-cleaning.jpg" alt="" uk-cover>
-                        <canvas height="300"></canvas>
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Additional Services</h3>
-                        <p>We offer additional services for your appliances</p>
-                        <a href="" class="uk-button uk-button-primary">Learn more</a>
-                    </div>
-                </div>
-            </div>
+            {{ end }}
         </div>
     </div>
 </div>

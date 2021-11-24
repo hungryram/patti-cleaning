@@ -1,7 +1,18 @@
 {{ define "main" }}
     <div class="uk-section">
         <div class="uk-container">
-            
+            <div uk-grid>
+                <div class="uk-width-1-2@s">
+                    <img src="{{ .Params.image }}" alt="{{ .Params.image_alt_tag }}">
+                </div>
+                <div class="uk-width-1-2@s">
+                    <h2>{{ .Params.heading }}</h2>
+                    {{ .Params.body | markdownify }}
+                    <div class="uk-margin-medium-top">
+                        <a href="https://squareup.com/appointments/book/h53pijoes6fo2k/LHTPKBRG84PY4/services" class="uk-button uk-button-primary">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 {{ end }}

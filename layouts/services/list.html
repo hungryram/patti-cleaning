@@ -1,9 +1,21 @@
 {{ define "main" }}
     <div class="uk-section">
-        <div class="uk-container">
-            <div class="uk-child-width-1-3@s">
-                {{ range .Params.services }}
-                    
+        <div class="uk-container uk-container-large">
+            <div class="uk-child-width-1-3@s" uk-grid>
+                {{ range .Pages }}
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top uk-cover-container">
+                            <img src="{{ .Params.image }}" alt="" uk-cover>
+                            <canvas height="300"></canvas>
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">{{ .Title }}</h3>
+                            <p>{{ .Params.body | truncate 100 }}</p>
+                            <a href="{{ .Permalink }}" class="uk-button uk-button-primary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
                 {{ end }}
             </div>
         </div>
