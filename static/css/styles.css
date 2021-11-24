@@ -17,8 +17,7 @@ body .uk-heading-large,
 body .uk-heading-medium, 
 body .uk-heading-small, 
 body .uk-heading-xlarge {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -386,6 +385,7 @@ ul.service__list__faq li a:hover {
 
 footer.footer {
     background: #fff;
+    border-top: 1px solid rgb(206, 206, 206);
 }
 
 footer.footer h6,

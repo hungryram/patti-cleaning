@@ -5,6 +5,7 @@ languageCode = "en-us"
 [[menu.main]]
 name = "Services"
 weight = 2
+url = "/services"
 [[menu.main]]
 name = "About"
 url = "/about"

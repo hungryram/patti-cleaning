@@ -1,11 +1,9 @@
 {{ partial "global/head" . }}
 {{ partial "global/navbar" . }}
-<div class="uk-section uk-section-small page__banner uk-card" style="background: #dbdbdb">
-    <div class="page__slider" uk-scrollspy="cls:uk-animation-fade"></div>
+<div class="uk-section uk-section-large page__banner uk-card" style="background: url(https://res.cloudinary.com/hungryram19/image/upload/v1637770071/patti/cleaning/background-clean.jpg) no-repeat center;background-size:cover">
     <div class="uk-container">
-        <div class="page__banner__inner">
-            <h1 class="h1-title">{{ .Title }}</h1>
-            {{ partial "templates/breadcrumbs" . }}
+        <div class="page__banner__inner uk-text-center">
+            <h1 class="h1-title uk-text-uppercase">{{ .Title }}</h1>
         </div>
     </div>
 </div>
